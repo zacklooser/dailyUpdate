@@ -1,0 +1,111 @@
+import {StyleSheet} from 'react-native';
+import {THEME, WHITE} from '../../utils/colors';
+import {DEVICE_WITDTH} from '../../utils/globalConfig';
+export const styles = StyleSheet.create({
+  jokesContainer: {
+    borderColor: THEME,
+    borderWidth: 1,
+    borderRadius: 15,
+    padding: 10,
+    marginTop: 20,
+  },
+  jokesControls: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  container: {width: '95%', alignSelf: 'center'},
+  makeCenter: {alignItems: 'center'},
+  boredText: {
+    color: '#fff',
+    backgroundColor: 'grey',
+    borderRadius: 10,
+    padding: 5,
+    marginTop: 10,
+  },
+  themeColor: {color: THEME},
+  navigationContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginTop: 40,
+  },
+  navigationSelected: {
+    width: '45%',
+    backgroundColor: THEME,
+    borderRadius: 20,
+    padding: 5,
+    borderWidth: 0,
+    borderColor: WHITE,
+  },
+  navigationDeSelected: {
+    width: '45%',
+    backgroundColor: WHITE,
+    borderRadius: 20,
+    padding: 5,
+    borderColor: THEME,
+    borderWidth: 1,
+  },
+  navigationSelectedText: {
+    color: WHITE,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  navigationDeSelectedText: {
+    color: THEME,
+    textAlign: 'center',
+    fontWeight: 'bold',
+  },
+  jokesList: {marginTop: 10},
+  memesList: {marginTop: 30, justifyContent: 'center'},
+  typeText: {
+    fontSize: 15,
+    fontWeight: 'bold',
+  },
+  row: {flexDirection: 'row'},
+  copyButton: {
+    backgroundColor: THEME,
+    padding: 5,
+    borderRadius: 25,
+    marginRight: 5,
+  },
+  favoritesButton: {
+    backgroundColor: THEME,
+    padding: 5,
+    borderRadius: 25,
+    marginRight: 5,
+  },
+  shareButton: {backgroundColor: THEME, padding: 5, borderRadius: 25},
+  question: {
+    color: THEME,
+    fontSize: 15,
+    fontWeight: 'bold',
+  },
+  answer: {color: 'grey', fontWeight: 'bold'},
+  imageBackground: {
+    height: DEVICE_WITDTH,
+    width: DEVICE_WITDTH * 0.95,
+    backgroundColor: 'rgba(0, 0, 0, 0.8)',
+  },
+  memesLikeContainer: {flexDirection: 'row', justifyContent: 'flex-end'},
+  memesLike: {
+    backgroundColor: THEME,
+    padding: 5,
+    borderRadius: 25,
+    margin: 5,
+  },
+  memesShareContainer: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+    margin: 5,
+  },
+  memesShare: {backgroundColor: THEME, padding: 5, borderRadius: 25},
+  tagContainer: {
+    padding: 10,
+    bottom: 0,
+    position: 'absolute',
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    width: DEVICE_WITDTH * 0.95,
+  },
+  tagText: {color: 'white', textAlign: 'center'},
+});
